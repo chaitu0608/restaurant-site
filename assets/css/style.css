@@ -154,6 +154,10 @@ body{
   height: 300vh;
 }
 
+.logo {
+  margin-bottom: -20px; /* Reduce the space between logos */
+}
+
 
 body.loaded{overflow: overlay;}
 
@@ -222,7 +226,7 @@ body.nav-active{overflow: hidden;}
 .preload.loaded>*{transition: var(--transition-2);}
 .preload.loaded>*{opacity: 0;}
 .preload.loaded{
-  transition-delay: 500ms;
+  transition-delay: 600ms;
   transform: translate(100%);
 }
 
