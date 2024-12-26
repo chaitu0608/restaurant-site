@@ -202,7 +202,24 @@ body.nav-active{overflow: hidden;}
 \*-----------------------------------*/
 
 .container{
-  padding: le;
+  padding-inline: 16px;
+}
+
+.seperator{
+  width: 8px;
+  height: 8px;
+  border: 1px solid var(--gold-crayola);
+  transform:rotate(45deg);
+
+}
+
+.contact-label{
+  font-weight: var(--weight-bold);
+}
+
+.contact-number{
+  color: violet;
+
 }
 
 
