@@ -201,7 +201,9 @@ body.nav-active{overflow: hidden;}
   #REUSED STYLE
 \*-----------------------------------*/
 
-
+.container{
+  padding: le;
+}
 
 
 
