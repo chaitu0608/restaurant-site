@@ -227,15 +227,42 @@ body.nav-active{overflow: hidden;}
 }
 
 .title-1{
-  font-size: var(--fontSize-title-1);
+font-size: var(--fontSize-title-1);
 }
 
-.title-2{font-size: var(--fontSize-title-2);}
+.title-2{
+font-size: var(--fontSize-title-2);
+}
 
-.title-3{}
+.title-3{
+font-size: var(--fontSize-title-3);
+}
 
-.title-4{}
+.title-4{
+  font-size: var(--fontSize-title-4);
+}
 
+.body-1{
+  font-size: var(--fontSize-body-1);
+  line-height: var(--lineHeight-6);
+}
+
+.body-2{
+  font-size: var(--fontSize-body-2);
+  line-height: var(--lineHeight-4);
+}
+
+.body-3{
+  font-size: var(--fontSize-body-3);
+}
+
+.body-4{
+  font-size: var(--fontSize-body-4);
+}
+
+.label-1{
+  
+}
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
