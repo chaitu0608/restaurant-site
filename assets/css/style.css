@@ -261,11 +261,20 @@ font-size: var(--fontSize-title-3);
 }
 
 .label-1{
+  font-size: var(--fontSize-label-1);
   
 }
+.label-2{
+  font-size: var(--fontSize-label-2);
+  
+}
+
+
 /*-----------------------------------*\
   #REUSED STYLE
-\*-----------------------------------*/
+\*-------  #REUSED STYLE
+
+  #REUSED STYLE----------------------------*/
 
 .container{
   padding-inline: 16px;
@@ -401,6 +410,92 @@ font-size: var(--fontSize-title-3);
 \*-----------------------------------*/
 
 
+.navbar,
+.overlay,
+.header.btn{display: none;}
+.header .btn-secondary {
+  display: none;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  padding-block: 40px;
+  z-index: 4;
+  border-block-end: 1px solid transparent;
+  transition: var(--transition-1);
+
+}
+
+header.active{
+  padding-block: 20px;
+  background-color: var(--eerie-black-4);
+  border-color: var(--black-alpha-15);
+}
+
+
+header.hide{
+  transform: translate(-100%);
+  transition-delay: 250ms;
+}
+
+.header .container {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between; /* Push logo to the left and nav-open-btn to the right */
+  flex-wrap: nowrap; /* Prevent elements from wrapping onto the next line */
+}
+
+.logo img {
+  max-width: 160px; /* Adjust the logo's size if it's too large */
+  height: auto
+  
+}
+
+.nav-open-btn {
+
+
+  margin-left: auto; /* Push the button to the far-right */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.nav-open-btn .line{
+  width: 40px;
+  height: 3px;
+  background-color: var(--white);
+  margin-block: 5px;
+  transform-origin:right ;
+  animation: menuBtn 400ms ease-in-out alternate infinite;
+}
+
+
+
+@keyframes menuBtn {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0.5);
+  }
+}
+
+
+.nav-open-btn .line-2 {
+  animation-delay: 150ms;
+}
+
+.nav-open-btn .line-3 {
+  animation-delay: 300ms;
+}
+:root {
+  --white: #ffffff;
+}
 
 
 /*-----------------------------------*\
