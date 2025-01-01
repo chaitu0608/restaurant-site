@@ -455,14 +455,17 @@ header.hide{
 }
 
 .nav-open-btn {
-
-
-  margin-left: auto; /* Push the button to the far-right */
+  transform: scale(1.5); /* Scale the entire button */
+  margin-left: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 60px;
+  height: 60px;
+
 }
+
 
 
 .nav-open-btn .line{
@@ -473,6 +476,8 @@ header.hide{
   transform-origin:right ;
   animation: menuBtn 400ms ease-in-out alternate infinite;
 }
+
+
 
 
 
@@ -495,6 +500,35 @@ header.hide{
 }
 :root {
   --white: #ffffff;
+}
+
+.navbar {
+  position: fixed;
+  background-color: var(--smoky-black-1);
+  top: 0;
+  left: 0; /* Position the navbar initially off-screen */
+  bottom: 0;
+  max-width: 100%;
+  padding-inline: 30px;
+  overflow-y: auto;
+  visibility: hidden; /* Hide the navbar initially */
+  z-index: 2;
+  transform: translateX(-100%); /* Start off-screen */
+  transition: transform 0.3s ease, visibility 0.3s ease; /* Transition for both visibility and transform */
+}
+
+.navbar.active {
+  visibility: visible; /* Make it visible when active */
+  transform: translateX(0); /* Slide in from the left */
+}
+
+.navbar.close-btn {
+  color: var(--white);
+  border: 1px solid currentColor;
+  padding: 4px;
+  border-radius: var(--radius-circle);
+  margin-inline-start: auto;
+  margin-block: 30px 20px;
 }
 
 
