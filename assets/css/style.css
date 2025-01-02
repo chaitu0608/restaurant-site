@@ -410,7 +410,7 @@ font-size: var(--fontSize-title-3);
 \*-----------------------------------*/
 
 
-.navbar,
+
 .overlay,
 .header.btn{display: none;}
 .header .btn-secondary {
@@ -506,20 +506,21 @@ header.hide{
   position: fixed;
   background-color: var(--smoky-black-1);
   top: 0;
-  left: 0; /* Position the navbar initially off-screen */
+  left: -360px;
   bottom: 0;
-  max-width: 100%;
+  max-width: 360px;
+  width: 100%;
   padding-inline: 30px;
+  padding-block-end: 50px;
   overflow-y: auto;
-  visibility: hidden; /* Hide the navbar initially */
+  visibility: hidden;
   z-index: 2;
-  transform: translateX(-100%); /* Start off-screen */
-  transition: transform 0.3s ease, visibility 0.3s ease; /* Transition for both visibility and transform */
+  transition: var(--transition-2);
 }
 
 .navbar.active {
-  visibility: visible; /* Make it visible when active */
-  transform: translateX(360px); /* Slide in from the left */
+  visibility: visible; 
+  transform: translateX(360px); 
 }
 
 .navbar.close-btn {
@@ -531,9 +532,62 @@ header.hide{
   margin-block: 30px 20px;
 }
 
+.navbar.close-btn ion-icon{--ionicon-stroke-width:40px;}
+
+
+.navbar.close-btn:is(:hover, :focus-visible){color: var(--gold-crayola);}
+
+
+.navbar.logo{
+  max-width: max-content;
+  margin-inline: auto;
+  margin-block-end: 60px;
+}
+
+
+.navbar-list{
+  border-block-end: 1px solid var(--white-alpha-20);
+  margin-block-end:100px ;
+}
 
 
 
+.navbar-item{border-block-start: 1px solid var(--white-alpha-20);}
+
+.navbar-link {
+  position: relative;
+  font-size: var(--fontSize-label-2);
+  text-transform: uppercase;
+  padding-block: 10px;
+  max-width: unset;
+}
+
+.navbar-link::after { display: none; }
+
+.navbar-link .span { transition: var(--transition-1); }
+
+.navbar-link:is(:hover, :focus-visible, .active) .span {
+  color: var(--gold-crayola);
+  transform: translateX(20px);
+}
+
+.navbar-link .separator {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(45deg);
+  opacity: 0;
+  transition: var(--transition-1);
+}
+
+
+.navbar-link:is(:hover, :focus-visible, .active) .separator { opacity: 1; }
+
+.navbar-title { margin-block-end: 15px; }
+
+.navbar-text { margin-block: 10px; }
+
+.navbar .body-4 { color: var(--quick-silver); }
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
