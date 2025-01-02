@@ -479,6 +479,11 @@ header.hide{
 
 
 
+.navbar-link {
+  text-decoration: none; /* Removes the underline */
+}
+
+
 
 
 @keyframes menuBtn {
@@ -523,71 +528,7 @@ header.hide{
   transform: translateX(360px); 
 }
 
-.navbar.close-btn {
-  color: var(--white);
-  border: 1px solid currentColor;
-  padding: 4px;
-  border-radius: var(--radius-circle);
-  margin-inline-start: auto;
-  margin-block: 30px 20px;
-}
 
-.navbar.close-btn ion-icon{--ionicon-stroke-width:40px;}
-
-
-.navbar.close-btn:is(:hover, :focus-visible){color: var(--gold-crayola);}
-
-
-.navbar.logo{
-  max-width: max-content;
-  margin-inline: auto;
-  margin-block-end: 60px;
-}
-
-
-.navbar-list{
-  border-block-end: 1px solid var(--white-alpha-20);
-  margin-block-end:100px ;
-}
-
-
-
-.navbar-item{border-block-start: 1px solid var(--white-alpha-20);}
-
-.navbar-link {
-  position: relative;
-  font-size: var(--fontSize-label-2);
-  text-transform: uppercase;
-  padding-block: 10px;
-  max-width: unset;
-}
-
-.navbar-link::after { display: none; }
-
-.navbar-link .span { transition: var(--transition-1); }
-
-.navbar-link:is(:hover, :focus-visible, .active) .span {
-  color: var(--gold-crayola);
-  transform: translateX(20px);
-}
-
-.navbar-link .separator {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%) rotate(45deg);
-  opacity: 0;
-  transition: var(--transition-1);
-}
-
-
-.navbar-link:is(:hover, :focus-visible, .active) .separator { opacity: 1; }
-
-.navbar-title { margin-block-end: 15px; }
-
-.navbar-text { margin-block: 10px; }
-
-.navbar .body-4 { color: var(--quick-silver); }
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
