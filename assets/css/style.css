@@ -519,7 +519,7 @@ header.hide{
 
 .navbar.active {
   visibility: visible; /* Make it visible when active */
-  transform: translateX(0); /* Slide in from the left */
+  transform: translateX(360px); /* Slide in from the left */
 }
 
 .navbar.close-btn {
@@ -530,6 +530,8 @@ header.hide{
   margin-inline-start: auto;
   margin-block: 30px 20px;
 }
+
+
 
 
 /*-----------------------------------*\
