@@ -73,9 +73,9 @@
   --radius-circle: 50%;
 
 
-  --transition-1: 250ms ease;
-  --transition-2: 500ms ease;
-  --transition-3: 1000ms ease;
+  --transition-1: 500ms ease;
+  --transition-2: 2000ms ease;
+  --transition-3: 2000ms ease;
 }
 
 
@@ -270,11 +270,11 @@ font-size: var(--fontSize-title-3);
 }
 
 
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-------  #REUSED STYLE
 
-  #REUSED STYLE----------------------------*/
+/* 
+REUSED STYLE 
+*/
+
 
 .container{
   padding-inline: 16px;
@@ -323,6 +323,11 @@ font-size: var(--fontSize-title-3);
 .hover-underline:is(hover,:focus-visible)::after{
   transform:scaleX(1);
   opacity:1;
+}
+
+.text-center{
+  text-align: center;
+
 }
 
 
@@ -541,16 +546,16 @@ font-size: var(--fontSize-title-3);
   width: 10px;
   height: 10px;
   background-color: var(--gold-crayola); 
-  transform: translateY(-50%) rotate(45deg); /* Rotate to form a diamond */
+  transform: translateY(-50%) rotate(45deg); 
   opacity: 0; 
   transition: var(--transition-1);
 }
 .navbar-link {
-  padding-left: 20px; /* Create space for the separator */
+  padding-left: 20px; 
 }
 
 .navbar-link:is(:hover, :focus-visible, .active) .separator {
-  opacity: 1; /* Becomes visible on hover or active state */
+  opacity: 1; 
 }
 .navbar-title { margin-block-end: 15px; }
 
