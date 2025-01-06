@@ -416,7 +416,6 @@ REUSED STYLE
 
 
 
-.overlay,
 .header .btn { display: none; }
 
 .header {
@@ -572,6 +571,10 @@ REUSED STYLE
   margin-inline: auto;
 }
 
+.navbar.contact-label{margin-block-end: 10px;}
+
+.navbar::-webkit-scrollbar-thumb{background-color: var(--white-alpha-10);}
+
 .navbar .contact-label { margin-block-end: 10px; }
 
 .navbar::-webkit-scrollbar-thumb { background-color: var(--white-alpha-10); }
@@ -594,6 +597,13 @@ REUSED STYLE
   pointer-events: all;
 }
 
+
+.overlay{
+  position: fixed;
+  top: 0;
+  
+
+}
 
 /*-----------------------------------*\
   #HERO
