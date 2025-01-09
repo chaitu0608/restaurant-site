@@ -456,10 +456,12 @@ REUSED STYLE
 }
 
 .nav-open-btn .line {
-  width: 30px;
-  height: 2px;
+  width: 50px;
+  height: 4px;
   background-color: var(--white);
   margin-block: 4px;
+  margin-left: -120px;
+  margin-block: 8px;
   transform-origin: left;
   animation: menuBtn 400ms ease-in-out alternate infinite;
 }
