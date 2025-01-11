@@ -462,6 +462,7 @@ REUSED STYLE
   margin-block: 4px;
   margin-left: -120px;
   margin-block: 8px;
+  color: rgb(174, 164, 191);
   transform-origin: left;
   animation: menuBtn 400ms ease-in-out alternate infinite;
 }
